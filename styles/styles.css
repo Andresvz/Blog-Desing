@@ -103,7 +103,8 @@ header
 	background: #002F2F;
 	color: white;
 	overflow: hidden;
-	padding: 0.5em;
+	padding: 0.2em;
+	position: relative;
 
 }
 header figure
@@ -113,7 +114,7 @@ header figure
 }
  header h1
  {
- 	font-size: 1.2em;
+ 	font-size: 1.2em;	|1q	|1
  	font-weight: normal;
  	margin: 0.2em 70px 0 0;
  	
@@ -166,8 +167,12 @@ nav ul #publicar_nav{
 	top: -0.3em;
 	right: 0;
 }
-nav ul #publicar_nav a
+nav ul a
 {
+	text-decoration: none;
+}
+nav ul #publicar_nav a
+{  
 	background: #22BCE0;
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px ;
 	padding:0.8em 0.5em 0.8em 2.5em ;
@@ -181,11 +186,14 @@ nav ul #publicar_nav a:before{
 left: 0.5em;
 top: 0.7em;
 }
+nav ul #publicar_nav a:hover{
+	 box-shadow: 0 0 30px yellow;
+}
 
 nav ul #publicar_nav a:hover:before
 {
-font-size: 20px;
-
+/*font-size: 20px;
+*/
 
 }
 nav ul li a:hover{
@@ -267,6 +275,7 @@ color: black;
 	padding: 0.2em 0.5em;
 	border-radius: 0.5em;
 	float: left;
+	margin-bottom: .2em;
 }
 #contenido .item .votacion
 {
@@ -307,4 +316,32 @@ color: #444;
 	#contenido .item:nth-child(odd){
 	margin-right: 2%;
 	}
+}
+
+
+/* formulario*/
+
+.form{
+	padding: 1em;
+	text-align: right;
+  display: none;
+
+}
+
+.form input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+
+}
+
+.form input[type="submit"]{
+	background: #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px ;
+	
+	border-color: #22BCE0;
+	text-decoration: none;
+	font-size: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px ;
+	color: white;
 }

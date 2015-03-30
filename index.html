@@ -12,6 +12,7 @@
    
     <link rel="stylesheet"  href="styles/normalize.css"/>
     <link rel="stylesheet"  href="styles/styles.css"/>
+<!-- <script src="js/prefixfree.js"></script> -->
   </head>
 
   <body>
@@ -35,9 +36,18 @@
                <li><a href="#">Javascript</a></li>
                <li><a href="#">CSS3</a></li>
                <li><a href="#">Django</a></li>
-               <li id="publicar_nav"><a href="#" class="icon-pen">Publicar</a></li>
+               <li id="publicar_nav"><a href="#" class="icon-pen" id="view-form">Publicar</a></li>
           </ul>
       </nav>
+
+      <form action="" id="form" class="form">
+     
+      <input type="text" id="title" required placeholder="TItulo">
+
+      <input type="url" id="url" required placeholder="Url">  
+
+      <input type="submit" value="Agregar">
+      </form>
     
       <section id="contenido">
           <article class="item">
@@ -192,6 +202,8 @@
         <p> <strong>Powered by The3ballsoft &copy; </p></strong> 
         <p>Hacemos todo con amor </p>
       </footer>
-   
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="js/form.js"></script>
+
   </body>
   </html>
